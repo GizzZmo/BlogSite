@@ -254,3 +254,5 @@ You'll need at least three main tables:
 This is a complex project, but breaking it down into these smaller, manageable parts will make it achievable.
 
 Would you like me to elaborate on any specific part, for example, provide a more detailed code example for the registration process or the database connection? Or perhaps you'd like to discuss a particular security aspect?
+
+Ref. https://www.php.net/
