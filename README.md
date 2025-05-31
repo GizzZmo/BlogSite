@@ -1,8 +1,7 @@
 # BlogSite
-How to create a full-fledged PHP blog site with registration, email confirmation, and individual user blogs ?
+How to create a full-fledged PHP blog site with registration, email confirmation, and individual user blogs, just like Facebook, Twitter/X etc. ?
 
 Okay, creating a full-fledged PHP blog site with registration, email confirmation, and individual user blogs is a significant undertaking. I can provide you with a comprehensive conceptual outline and a roadmap of the key components and steps involved.
-
 This will be a high-level guide, and actual implementation would require writing a good amount of PHP, HTML, CSS, and potentially JavaScript code, along with database setup.
 
 Here's a breakdown of the project:
