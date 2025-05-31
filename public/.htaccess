@@ -1,0 +1,34 @@
+# public/.htaccess
+
+# Enable URL Rewriting
+RewriteEngine On
+
+# --- Prevent Direct Access to Files ---
+# Block access to .env, composer.json, etc. if they were accidentally placed in public
+# (They should be in the project root, one level above public/)
+RewriteRule ^(\.env|composer\.json|composer\.lock)$ - [F,L]
+
+# --- Standard Front Controller Pattern ---
+# Redirect all requests for files or directories that don't actually exist
+# to the index.php script.
+
+# If the request is not for an existing file
+RewriteCond %{REQUEST_FILENAME} !-f
+# And the request is not for an existing directory
+RewriteCond %{REQUEST_FILENAME} !-d
+# Then rewrite the request to index.php, appending the original request URI
+# The QSA (Query String Append) flag ensures that any query parameters are preserved.
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+
+# --- Optional: Force HTTPS (Uncomment if your site uses SSL) ---
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# --- Optional: Remove trailing slash from URLs (for SEO consistency) ---
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# --- PHP Settings (if needed and allowed by your host) ---
+# For example, to increase memory limit or execution time:
+# php_value memory_limit 256M
+# php_value max_execution_time 60
