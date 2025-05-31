@@ -1,5 +1,5 @@
 # BlogSite
-creating a full-fledged PHP blog site with registration, email confirmation, and individual user blogs
+How to create a full-fledged PHP blog site with registration, email confirmation, and individual user blogs ?
 
 Okay, creating a full-fledged PHP blog site with registration, email confirmation, and individual user blogs is a significant undertaking. I can provide you with a comprehensive conceptual outline and a roadmap of the key components and steps involved.
 
