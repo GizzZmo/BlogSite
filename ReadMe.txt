@@ -120,11 +120,9 @@ A secure and user-friendly multi-user blogging platform built with PHP, focusing
     * Ensure the web server has write permissions to any necessary directories (e.g., cache, uploads - if applicable later).
 
 ## Contribution
-
-(Details on how to contribute if this were a public project)
+https://github.com/GizzZmo
 
 ## License
-
-(Choose a license, e.g., MIT)
+MIT
 
 This README.md provides a good overview. The file structure is a common way to organize a PHP MVC-like application, even if we're not using a full-fledged framework initially. It promotes separation of concerns.
